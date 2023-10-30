@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@500&family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="navbar-container-div">
+        <p class="logo-text-para">Task.me ✎</p>
+        <!-- <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg> -->
+
+        
+        <div id="search-bar-div">
+            <img src="./assets/images/search-icon.png" alt="" height="40%">
+            <input type="text" id="search-bar-input-field" placeholder=" type task title ">
+        </div>
+    </div>
+    
+
+    <!-- middle main box containing 'input fields' and 'pending/saved tasks' -->
+    <div class="input-fields-outter-container">
+
+        <div class="input-fields-inner-container">
+
+            <input class="input-fields" id="title-input-field" type="text" placeholder="Task Title"> 
+            <textarea class="input-fields desc-input-field" id="desc-input-field" name="" cols="20" rows="2" placeholder="Task Description"></textarea> 
+            <input class="input-fields" id="date-input-field" type="date" >
+            <button class="task-save-btn" id="task-save-btn"> + Add Task</button>
+            
+            <h2 class="pending-tasks-heading">Pending Tasks : </h2>
+
+            <div id="saved-task-display-div">
+
+                <!-- DUMMY SAVED TASK HTML -->
+
+                <!-- <div class="each-task-div">
+
+                    <div class="saved-task-left-div">
+                        <h2>Task Title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sint voluptate atque. Debitis alias impedit quas dolore nisi quod delectus?</p>
+                        <p>due-date: </p>
+                    </div>
+
+                    <div class="saved-task-right-div">
+                        <button class="saved-task-btns saved-task-done-btn">Done 
+                            <img src="./assets/images/lightmode-done-icon.png" alt="" height="70%">
+                        </button>
+                        <button class="saved-task-btns saved-task-delete-btn" > Delete 
+                                <img src="./assets/images/lightmode-delete-icon.png" alt="" height="70%">
+                        </button>
+                    </div>
+
+                </div> -->
+                
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- html for completed tasks   -->
+    <h2 class="completed-tasks-heading"> Completed Tasks : </h2>
+
+    <div class="completed-tasks-display-div" id="completed-tasks-display-div">
+
+        <!-- dummy completed task html -->
+        <!--    
+        <div class="each-completed-task-div">
+
+            <div class="completed-task-left-div">
+                <h3 class="completed-tasks-title">Task Title</h3>
+                <p class="completed-tasks-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius doloribus assumenda culpa officia minus accusantium corrupti repellat architecto impedit.</p>
+                <p class="completion-date"> Completion Date : 2023-09-02 </p>
+                <p class="due-date"> Due Date : 2023-09-02 </p>
+            </div>
+
+            <div class="completed-task-right-div">
+                <img class="completed-task-erase-img" src="./assets/images/trash-can-icon.svg" height="25px" alt="" style="cursor: pointer;">
+            </div>
+
+        </div>
+    
+        -->    
+
+        
+    </div>
+        
+        
+    </div>
+
+
+    <!-- footer -->
+
+
+</body>
+<script src="./script.js"></script>
+</html> 

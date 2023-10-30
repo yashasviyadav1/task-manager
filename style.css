@@ -1,0 +1,311 @@
+body{
+    background-color: #ccddd7;
+    margin:0;
+} 
+
+.navbar-container-div{
+    height: 60px;
+    width: 100%;
+    background-color: #183D3D;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-content: center;
+    gap: 40%; */
+}
+
+.logo-text-para{
+    /* border: 1px solid white; */
+
+    margin:0;
+    margin-left: 15px;
+    color: #ccddd7;
+    height:80%;
+    font-size: 30px;
+    padding-top: 5px;
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*------------------- search bar--------------- */
+
+
+#search-bar-div{
+    border-radius: 20px;
+    height: 50%;
+    padding-left: 20px;
+    margin-top:14px;
+    border:0;
+    background-color: #ccddd7;
+    background-color: #4b7575;
+    color: white; 
+    /* padding-top: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar-div img{
+    filter: invert(100%);
+    height: 15px;
+}
+
+#search-bar-input-field{
+    background-color: transparent;
+    border:0;
+    margin:0;
+    color: white;
+
+}
+#search-bar-input-field:focus{
+    outline: none;
+}
+
+#search-bar-input-field::placeholder{
+    color: #ccddd7;
+}
+
+
+/* -------------input fields starts -------------------- */
+
+.input-fields-outter-container{
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-fields-inner-container{
+    padding: 20px;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* main axis - top to bottom now*/
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+
+    
+}
+
+::placeholder{
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+}
+
+.input-fields{
+    background-color: #e9f1ef;
+    border-radius: 10px;
+    border: 0px solid rgb(24, 61, 61,0.5);
+    height: 30px;
+    width: 90%;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+    /* box-shadow:  rgb(24, 61, 61,0.5) 0px 3px 8px; */
+
+}
+
+.desc-input-field{   /* to place placeholder at right pos*/
+    padding-top:10px;
+}
+
+.input-fields:focus{
+    outline:none;
+    box-shadow: 0px 0px 10px  rgb(24, 61, 61,2);
+
+}
+
+
+.task-save-btn{  /* task is saved when u click on this */
+    height: 35px;
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* background-image: linear-gradient(#ccddd7,#183D3D); */
+    background-color: #064242;
+    color: #ccddd7;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.task-save-btn:hover{
+    background-color: #145b5b;
+    transition: background-color 0.4s ;
+}
+
+.pending-tasks-heading{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    align-self: flex-start;
+    /* text-decoration: underline; */
+    color: #064242; 
+}
+
+
+/* -----------saved tasks css starts------------ */
+
+#saved-task-display-div{
+    /* background-color:  rgb(24, 61, 61,0.05); */
+    /* bordeR: 1px solid red; */
+   
+    width: 100%;
+}
+
+.each-task-div{
+    /* border: 1px solid black; */
+    width:90%;
+    width: 95%;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: rgb(24, 61, 61,0.2) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color:  rgb(24, 61, 61,0.05);
+    display: flex;
+    margin-bottom:20px;
+}
+
+.saved-task-btns{
+    
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: rgb(24, 61, 61,0.2) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /* border:0; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.saved-task-done-btn{
+    border:1px solid green;
+    /* background-color: #0F9D58; */
+    background-color: rgba(36, 219, 130, 0.5);
+    color: black;
+    box-shadow: none;
+}
+
+.saved-task-delete-btn{
+    border:1px solid red;
+    background-color: rgba(230, 113, 102, 0.5);
+    box-shadow: none;
+    /* box-shadow: 0 1px 3px rgba(230, 113, 102, 0.5); */
+}
+
+
+.saved-task-left-div{
+    /* bordeR: 1px solid black; */
+
+    width: 70%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.saved-task-right-div{
+    /* bordeR: 1px solid black; */
+
+    width: 30%;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*------------------ completed tasks section----------------- */
+
+.completed-tasks-heading{
+    
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    /* align-self: flex-start; */
+    text-decoration: underline;
+    color: #064242; 
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.completed-tasks-display-div{
+    /* border: 2px solid rgb(205, 11, 11); */
+    padding: 20px;
+}
+
+.each-completed-task-div{
+    font-family: 'Nunito Sans', sans-serif;
+
+    display: flex;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    /* background-color: rgb(178, 235, 242); */
+
+    border: 1px solid #183D3D;
+    border: 1px solid rgb(56, 170, 207,1);
+    
+    /* box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
+    /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}   
+
+.completed-tasks-title{
+    margin:0;
+    margin-bottom: 10px;
+}
+
+.completed-tasks-desc{
+    margin:0;
+    margin-bottom: 12px;
+}
+
+.completion-date,.due-date{
+    margin:0;
+    margin-bottom:1px;
+}
+
+.completed-task-left-div{
+    /* border: 1px solid red; */
+
+    width: 85%;
+}
+
+.completed-task-right-div{
+    /* border: 1px solid red; */
+
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed-task-erase-img{
+    border-radius: 5px;
+    height: 22px;
+    border: 1px solid #183D3D;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.completed-task-erase-img:hover{
+    /* filter: invert(100%); */
+    border: 2px solid red;
+    transition: border 0.2s ; 
+    
+}
+
+
+
+/* ------------media query-------------------------------- */
+
+@media (max-width: 353px){
+
+    .task-save-btn{  /* task is saved when u click on this */
+        font-size: 11px;
+    }
+
+}
+
