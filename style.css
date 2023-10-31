@@ -3,6 +3,9 @@ body{
     margin:0;
 } 
 
+/*
+font-family: 'Nunito Sans', sans-serif;
+ */
 .navbar-container-div{
     height: 60px;
     width: 100%;
@@ -57,8 +60,8 @@ body{
     border:0;
     margin:0;
     color: white;
-
 }
+
 #search-bar-input-field:focus{
     outline: none;
 }
@@ -79,6 +82,7 @@ body{
 
 .input-fields-inner-container{
     padding: 20px;
+    /* border: 1px solid black; */
 
     border-radius: 10px;
     display: flex;
@@ -94,6 +98,7 @@ body{
 ::placeholder{
     font-family: 'Nunito Sans', sans-serif;
     color: black;
+    font-weight: normal;
 }
 
 .input-fields{
@@ -105,8 +110,14 @@ body{
     padding-left: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
     /* box-shadow:  rgb(24, 61, 61,0.5) 0px 3px 8px; */
-
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-weight: bold; */
 }
+
+.date-input-field::placeholder{
+    font-weight: normal;
+}
+
 
 .desc-input-field{   /* to place placeholder at right pos*/
     padding-top:10px;
@@ -170,7 +181,7 @@ body{
     
     cursor: pointer;
     height: 30px;
-    width: 100px;
+    width: 80px;
     border-radius: 8px;
     box-shadow: rgb(24, 61, 61,0.2) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     /* border:0; */
@@ -184,6 +195,12 @@ body{
     color: black;
     box-shadow: none;
 }
+.saved-task-done-btn:hover{
+    background-color: rgba(15, 99, 58, 0.9);
+    color: white;
+    transition: 0.3s;
+    border-color: rgba(15, 99, 58, 0.9);
+}
 
 .saved-task-delete-btn{
     border:1px solid red;
@@ -191,7 +208,13 @@ body{
     box-shadow: none;
     /* box-shadow: 0 1px 3px rgba(230, 113, 102, 0.5); */
 }
+.saved-task-delete-btn:hover{
+    background-color: rgba(148, 44, 35, 0.9);
+    color: white;
+    transition: 0.3s;
+    border-color:  rgba(148, 44, 35, 0.9);;
 
+}
 
 .saved-task-left-div{
     /* bordeR: 1px solid black; */
@@ -308,4 +331,34 @@ body{
     }
 
 }
+
+
+
+
+/* =========================== for tablets ================================= */
+
+/* 570px */
+
+@media (max-width: 570px){
+
+    .input-fields-inner-container{
+        box-shadow:none;
+    }
+    .saved-task-btns{
+        width: 55px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .saved-task-btns > img{
+        display: none;
+    }
+
+    #search-bar-div{
+        height: 50%;
+        width: 100px;
+        padding-left: 50px;
+    }
+    
+}
+
 
